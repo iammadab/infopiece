@@ -1,0 +1,23 @@
+{
+  "name": "infopiece",
+  "version": "1.0.0",
+  "description": "Secret sharing based on the shamir secret sharing scheme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iammadab/infopiece.git"
+  },
+  "keywords": [
+    "secret",
+    "sharing"
+  ],
+  "author": "Wisdom Ogwu (iammadab)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iammadab/infopiece/issues"
+  },
+  "homepage": "https://github.com/iammadab/infopiece#readme"
+}
