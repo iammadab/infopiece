@@ -5,7 +5,7 @@
 function convertToNumber(string){
 	let characters = string.split("")
 	let numberString = characters.map(character => {
-		let asciiValue = ascii(character), paddedValue = String(asciiValue).padStart(3, "0")
+		let asciiValue = asciiChar(character), paddedValue = String(asciiValue).padStart(3, "0")
 		return paddedValue
 	}).join("")
 	return numberString
@@ -14,6 +14,6 @@ function convertToNumber(string){
 module.exports = convertToNumber
 
 
-function ascii(character){
+function asciiChar(character){
 	return character.charCodeAt(0)
 }
