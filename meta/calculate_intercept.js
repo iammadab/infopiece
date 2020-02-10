@@ -1,9 +1,10 @@
-const BigNumber = require("bignumber.js")
+const buildMatrix = require("./build_matrix")
+const solveMatrix = require("./solve_matrix")
 
 function calculateIntercept(points){
 	let matrix = buildMatrix(points), result = extractResult(points)
 	let solvedMatrix = solveMatrix(matrix, result)
-	return grabIntercept(solveMatrix)
+	return grabIntercept(solvedMatrix)
 }
 
 module.exports = calculateIntercept
@@ -15,6 +16,6 @@ function extractResult(points){
 	})
 }
 
-function buildMatrix(points){
-	
+function grabIntercept(matrix){
+	return matrix[0].toString()
 }
