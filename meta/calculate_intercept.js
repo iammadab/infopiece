@@ -18,7 +18,7 @@ function extractResult(points){
 }
 
 function grabIntercept(matrix){
-	return matrix[0].toString()
+	return matrix[0].toFixed()
 }
 
 // console.log(calculateIntercept([

@@ -13,8 +13,8 @@ function breakSecret({ secretString, piecesCount, threshold }){
 
 module.exports = breakSecret
 
-// console.log(breakSecret({
-// 	secretString: "WaBa",
-// 	piecesCount: 5,
-// 	threshold: 1
-// }))
+console.log(breakSecret({
+	secretString: "my name is wisdom ogwu madab and this is a very long text",
+	piecesCount: 5,
+	threshold: 2
+}))
