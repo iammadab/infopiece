@@ -8,7 +8,7 @@
 */
 
 function createPolynomial(secretNumber, threshold){
-	let secret = Number(secretNumber), polynomial = [secret, ...guess(secret, threshold)]
+	let secret = Number(secretNumber), polynomial = [secret, ...guess(secret, threshold - 1)]
 	return polynomial
 }
 
