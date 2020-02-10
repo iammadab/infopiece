@@ -5,12 +5,19 @@
 const ASCII_CODE_LENGTH = 3
 
 function convertToString(number){
+	number = padTillComplete(number, ASCII_CODE_LENGTH)
 	let asciiCodes = breakNumber(number, ASCII_CODE_LENGTH)
 	let string = asciiCodes.map(asciiValue).join("")
 	return string
 }
 
 module.exports = convertToString
+
+// This function keeps adding zeros to the beginning of the number until it's length is perfectly divisible by the ascii code length
+function padTillComplete(number, length){
+	let padCount = (length - (number.length % length)) % length
+	return number.padStart(number.length + padCount, "0")
+}
 
 function breakNumber(number, length){
 	let numberString = String(number), numberArray = []

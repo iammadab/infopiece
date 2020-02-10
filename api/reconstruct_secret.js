@@ -12,5 +12,5 @@ function reconstructSecret({ pieces }){
 module.exports = reconstructSecret
 
 // console.log(reconstructSecret({
-// 	pieces: ["3293441688", "5409666070"]
+// 	pieces: ["2151272044491", "5247534512082"]
 // }))
