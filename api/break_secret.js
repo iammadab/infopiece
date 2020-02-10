@@ -1,11 +1,13 @@
 const convertToNumber = require("../meta/convert_to_number")
 const createPolynomial = require("../meta/create_polynomial")
-const generatePieces = require("../meta/generate_pieces")
+const generatePoints = require("../meta/generate_points")
+const pointsToPieces = require("../meta/points_to_pieces")
 
 function breakSecret({ secretString, piecesCount, threshold }){
   let secretNumber = convertToNumber(secretString)
   let polynomial = createPolynomial(secretNumber, threshold)
-  let pieces = generatePieces(polynomial, piecesCount)
+  let points = generatePoints(polynomial, piecesCount)
+  let pieces = pointsToPieces(points)
   return pieces
 }
 

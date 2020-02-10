@@ -2,15 +2,15 @@
 	This function takes a polynomial, and computes the values of the polynomial for values 1,2,3,...,piecesCount
 	All these values are returned in an array
 */
-function generatePieces(polynomial, piecesCount){
-	let pieces = []
+function generatePoints(polynomial, piecesCount){
+	let points = []
 	for(let i = 1; i <= piecesCount; i++){
-		pieces.push(solvePolynomialFor(polynomial, i))
+		points.push(solvePolynomialFor(polynomial, i))
 	}
-	return pieces
+	return points
 }
 
-module.exports = generatePieces
+module.exports = generatePoints
 
 // This is equivalent to passing a value x in a polynomial
 function solvePolynomialFor(polynomial, x){
@@ -25,4 +25,4 @@ function computeTerm(position, term, x){
 	return term * Math.pow(x, position)
 }
 
-// console.log(generatePieces([325, 210], 4))
+// console.log(generatePoints([325, 210], 4))
