@@ -14,3 +14,7 @@ function extractResult(points){
 		return new BigNumber(point.point)
 	})
 }
+
+function buildMatrix(points){
+	
+}
