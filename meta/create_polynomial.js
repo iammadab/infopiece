@@ -1,3 +1,4 @@
+const BigNumber = require("bignumber.js")
 /*
 	This function creates a polynomial by returning an array whose elementes represent the co-efficients a0,a1,a2,...,an
 	The polynomial will be used to generate the pieces later on
@@ -8,7 +9,7 @@
 */
 
 function createPolynomial(secretNumber, threshold){
-	let secret = Number(secretNumber), polynomial = [secret, ...guess(secret, threshold - 1)]
+	let secret = new BigNumber(secretNumber), polynomial = [secret, ...guess(secret, threshold - 1)]
 	return polynomial
 }
 
@@ -23,5 +24,5 @@ function guess(secret, threshold){
 }
 
 function random(number){
-	return Math.floor(Math.random() * number)
+	return number.multipliedBy(Math.random()).decimalPlaces(0)
 }
