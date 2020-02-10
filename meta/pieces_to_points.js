@@ -15,5 +15,3 @@ function extractPosition(piece){
 		point
 	}
 }
-
-// console.log(piecesToPoints(["023", "5445"]))

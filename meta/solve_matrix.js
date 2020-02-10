@@ -15,11 +15,3 @@ function solveMatrix(matrix, result){
 }
 
 module.exports = solveMatrix
-
-// console.log(solveMatrix(
-// 	[
-// 		[new BigNumber(1), new BigNumber(1)],
-// 		[new BigNumber(1), new BigNumber(2)]
-// 	], 
-// 	[new BigNumber(535), new BigNumber(745)]
-// ))

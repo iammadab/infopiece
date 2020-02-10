@@ -25,5 +25,3 @@ function solvePolynomialFor(polynomial, x){
 function computeTerm(position, term, x){
 	return term.multipliedBy(Math.pow(x, position))
 }
-
-// console.log(generatePoints([325, 210], 4))

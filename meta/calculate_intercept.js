@@ -20,8 +20,3 @@ function extractResult(points){
 function grabIntercept(matrix){
 	return matrix[0].toFixed()
 }
-
-// console.log(calculateIntercept([
-// 	{ position: 3, point: 955 },
-// 	{ position: 2, point: 745 }
-// ]))

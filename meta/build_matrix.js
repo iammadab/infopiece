@@ -26,8 +26,3 @@ function computeTerm(point, position){
 	let term = Math.pow(point, position)
 	return new BigNumber(term)
 }
-
-// console.log(buildMatrix([ 
-// 	{ position: 5},
-// 	{ position: 10 }
-// ]))
