@@ -3,7 +3,7 @@
 	As such, I am appending that position to the beginning of each piece
 */
 function pointsToPieces(points){
-	let pieces = points.map((val, pos) => String(pos) + String(val))
+	let pieces = points.map((val, pos) => String(pos + 1) + String(val))
 	return pieces
 }
 
