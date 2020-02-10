@@ -1,3 +1,7 @@
+/*
+	Each piece contains its position in the collection of pieces, this function extracts that position,
+	and the actual point encoded by the piece
+*/
 function piecesToPoints(pieces){
 	return pieces.map(extractPosition)
 }
