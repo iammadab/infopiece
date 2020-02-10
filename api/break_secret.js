@@ -14,7 +14,7 @@ function breakSecret({ secretString, piecesCount, threshold }){
 module.exports = breakSecret
 
 // console.log(breakSecret({
-// 	secretString: "Ņ",
-// 	piecesCount: 5,
-// 	threshold: 2
+// 	secretString: "hello",
+// 	piecesCount: 10,
+// 	threshold: 5
 // }))

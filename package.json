@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/iammadab/infopiece/issues"
   },
-  "homepage": "https://github.com/iammadab/infopiece#readme"
+  "homepage": "https://github.com/iammadab/infopiece#readme",
+  "dependencies": {
+    "bignumber.js": "^9.0.0",
+    "na-gaussian-elimination": "0.0.4"
+  }
 }
