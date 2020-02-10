@@ -14,6 +14,8 @@ function solveMatrix(matrix, result){
 	return system.solution
 }
 
+module.exports = solveMatrix
+
 // console.log(solveMatrix(
 // 	[
 // 		[new BigNumber(1), new BigNumber(1)],

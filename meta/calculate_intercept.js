@@ -1,3 +1,4 @@
+const BigNumber = require("bignumber.js")
 const buildMatrix = require("./build_matrix")
 const solveMatrix = require("./solve_matrix")
 
@@ -19,3 +20,8 @@ function extractResult(points){
 function grabIntercept(matrix){
 	return matrix[0].toString()
 }
+
+// console.log(calculateIntercept([
+// 	{ position: 3, point: 955 },
+// 	{ position: 2, point: 745 }
+// ]))
