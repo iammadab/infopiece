@@ -1,3 +1,7 @@
+const piecesToPoint = require("../meta/pieces_to_point")
+const calculateIntercept = require("../meta/calculate_intercept")
+const convertToString = require("../meta/convert_to_string")
+
 function reconstructSecret({ pieces }){
   let points = piecesToPoint(pieces)
   let intercept = calculateIntercept(points)
