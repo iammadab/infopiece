@@ -7,9 +7,9 @@ module.exports = {
 }
 
 let pieces = breakSecret({
-	secretString: "test",
-	piecesCount: 5,
-	threshold: 1
+	secretString: "another test string? with symbols!",
+	piecesCount: 20,
+	threshold: 3
 })
 console.log(pieces)
 

@@ -1,7 +1,4 @@
-// Extend bignumber to include the cmp and sub functions
 const BigNumber = require("bignumber.js")
-BigNumber.prototype.cmp = BigNumber.prototype.comparedTo
-BigNumber.prototype.sub = BigNumber.prototype.minus
 
 const GaussianElimination = require("na-gaussian-elimination")
 const zero = new BigNumber(0)

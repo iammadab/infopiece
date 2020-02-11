@@ -22,6 +22,6 @@
   "homepage": "https://github.com/iammadab/secretpiece#readme",
   "dependencies": {
     "bignumber.js": "^9.0.0",
-    "na-gaussian-elimination": "0.0.4"
+    "na-gaussian-elimination": "^1.0.0"
   }
 }
